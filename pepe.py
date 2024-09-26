@@ -61,7 +61,7 @@ def truncate(number, decimals):
     return int(number * factor) / factor
 
 def write_txt(content):
-    with open("/root/pendle_ordi/pendle.txt", "a") as file:
+    with open("/root/ftm_pepe/pepe.txt", "a") as file:
         print(content, file=file)
     return None
 
