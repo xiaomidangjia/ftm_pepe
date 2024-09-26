@@ -197,7 +197,7 @@ def get_num(symbol):
             response = requests.get(url, headers=header)
             ticker = json.loads(response.text)
             crypto_num = int(ticker['data'][0]['quantityPrecision'])
-            if crypto_num > 0:
+            if crypto_num >= 0:
                 w2 = 1
             else:
                 w2 = 0
